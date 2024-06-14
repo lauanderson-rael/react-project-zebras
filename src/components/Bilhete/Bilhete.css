@@ -1,18 +1,26 @@
 .bilhete {
+  background-color: white;
   border: 1px solid #ccc;
   padding: 20px;
   width: 100%;
   max-width: 300px;
   box-sizing: border-box;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 8px 1px #00003f50;
+  margin-top: 2rem;
+  margin-bottom: auto;
 }
 
 .item-bilhete {
   margin-bottom: 10px;
 }
 
-.item-bilhete input {
-  width: 100%;
+.item-bilhete input,
+.input-valor {
+  width: 95%;
   padding: 5px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 .bilhete button {
@@ -22,6 +30,7 @@
   padding: 10px;
   cursor: pointer;
   width: 100%;
+  border-radius: 0.4rem;
 }
 
 .bilhete button:hover {

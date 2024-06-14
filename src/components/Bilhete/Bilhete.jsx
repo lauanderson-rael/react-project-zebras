@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import './Bilhete.css';
+import './Bilhete.css'
 
 const Bilhete = ({ bilhete }) => {
   const [valores, setValores] = useState({});

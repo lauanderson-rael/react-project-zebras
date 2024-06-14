@@ -13,6 +13,7 @@
 .popup-inner {
   background-color: white;
   padding: 20px;
+  padding-bottom: 5px;
   border-radius: 10px;
   width: 90%;
   max-width: 400px;
@@ -29,6 +30,7 @@
   color: white;
   cursor: pointer;
   margin-bottom: 20px;
+  border-radius: 0.5rem;
 }
 
 .popup-inner button:hover {
@@ -49,15 +51,18 @@
   padding: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
+  border-radius: 0.5rem;
 }
 
 .popup-inner form button {
   background-color: #4caf50;
   border: none;
+  margin-top: 10px;
   padding: 10px;
   color: white;
   cursor: pointer;
   width: 100%;
+  font-weight: 600;
 }
 
 .popup-inner form button:hover {

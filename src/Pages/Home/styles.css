@@ -1,0 +1,90 @@
+/* .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.confrontos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+} */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  /* garante que o container ocupe toda a altura da viewport */
+}
+
+.page-container .eventos span {
+  margin-left: 3rem;
+  border-left: 8px solid #987303;
+  background-color: #d2c18d;
+  padding: 0.5rem 1rem;
+}
+.page-container .eventos {
+  margin-top: 2rem;
+}
+
+.content-wrap {
+  flex: 1; /* faz com que este div ocupe todo o espaço disponível, empurrando o footer para baixo */
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.confrontos {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 0;
+  align-items: flex-start;
+  border: 2px solid red;
+  margin: 20px;
+}
+
+.bilhete {
+  flex: 1;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .bilhete {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .confrontos {
+    align-items: center;
+    justify-content: center;
+  }
+}

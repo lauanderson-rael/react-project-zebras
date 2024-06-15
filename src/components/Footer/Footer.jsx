@@ -3,10 +3,14 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className="footer-container">
+      <div className='img'>
+       <img src="./../../../public/images/logo02.png" alt="logo" width="100px"/>
+      </div>
       <div className="footer-content">
         <div className="footer-column">
           <h3>Links Rápidos</h3>
           <ul>
+            <li></li>
             <li><a className='link' href="#">Início</a></li>
             <li><a className='link' href="#">Resultados</a></li>
             <li><a className='link' href="#">Contato</a></li>

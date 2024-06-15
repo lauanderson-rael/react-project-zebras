@@ -14,15 +14,16 @@ const Bilhete = ({ bilhete }) => {
 
   return (
     <div className="bilhete">
-      <h2>Bilhete</h2>
+      <h2>BILHETE</h2>
       {bilhete.map((item) => (
         <div key={item.id} className="item-bilhete">
           <div>{item.timeX} vs {item.timeY}</div>
-          <input
+          {/* <input
             type="number"
             placeholder="Valor"
             onChange={(e) => handleChange(item.id, e.target.value)}
-          />
+          /> */}
+
         </div>
       ))}
       <button onClick={() => console.log(valores)}>Finalizar Aposta</button>

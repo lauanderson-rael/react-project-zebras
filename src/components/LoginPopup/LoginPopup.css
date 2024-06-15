@@ -8,29 +8,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .popup-inner {
   background-color: white;
   padding: 20px;
   padding-bottom: 5px;
-  border-radius: 10px;
   width: 90%;
   max-width: 400px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 600;
 }
 
 .popup-inner button {
-  background-color: #ff4d4d;
+  background-color: tomato;
   border: none;
   padding: 10px;
   color: white;
   cursor: pointer;
+  font-weight: 600;
   margin-bottom: 20px;
-  border-radius: 0.5rem;
 }
 
 .popup-inner button:hover {
@@ -51,7 +52,6 @@
   padding: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  border-radius: 0.5rem;
 }
 
 .popup-inner form button {

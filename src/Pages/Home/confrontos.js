@@ -19,5 +19,23 @@ export const confrontos = [
       horario: '16:00',
       data: '02/07/2024',
     },
-    // Adicione mais confrontos
+    {
+      id: 2,
+      timeX: 'Flamengo',
+      timeY: 'Vasco',
+      imagemX: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjt0LJjYBkbA6gIuI8BwK8oOOgnur9vUhnXL-Lu9_eBevStQrDiVubDmAeo90VvRMwWXuUMAmwKGcVUulDm8X9bidkTdayMECED8WEGfMO82foPncg1x5c_1svKLniZ0Hz1S5SG6y4ey0A/s320/escudo-do-flamengo.png',
+      imagemY: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqSQh39kgk4hvGEUp66GxUZpzgPx_0Afz_vbuSstcxTCaJxIkTY5k-Pwt1GUUM4ymcbm2t3_vPz0rzVGE-yMlRvM-PyIGQe95CN5hQa3qeghajKWVb7adLpTuOcovm1Fjl_ndjqgE9BGJV/s320/vasco-da-gama-logo.png',
+      horario: '16:00',
+      data: '02/07/2024',
+    },
+    {
+      id: 2,
+      timeX: 'Flamengo',
+      timeY: 'Vasco',
+      imagemX: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjt0LJjYBkbA6gIuI8BwK8oOOgnur9vUhnXL-Lu9_eBevStQrDiVubDmAeo90VvRMwWXuUMAmwKGcVUulDm8X9bidkTdayMECED8WEGfMO82foPncg1x5c_1svKLniZ0Hz1S5SG6y4ey0A/s320/escudo-do-flamengo.png',
+      imagemY: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqSQh39kgk4hvGEUp66GxUZpzgPx_0Afz_vbuSstcxTCaJxIkTY5k-Pwt1GUUM4ymcbm2t3_vPz0rzVGE-yMlRvM-PyIGQe95CN5hQa3qeghajKWVb7adLpTuOcovm1Fjl_ndjqgE9BGJV/s320/vasco-da-gama-logo.png',
+      horario: '16:00',
+      data: '02/07/2024',
+    },
+
   ];

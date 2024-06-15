@@ -3,6 +3,10 @@
   color: #fff;
   padding: 50px 0;
 }
+.footer-container .img {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 .footer-content {
   display: flex;

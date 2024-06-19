@@ -2,13 +2,15 @@
 import PropTypes from 'prop-types';
 import './confrontos'
 import './styles.css';
-import CardConfronto from '../../components/CardConfronto/CardConfronto';
+// import CardConfronto from '../../components/CardConfronto/CardConfronto';
 import Bilhete from '../../components/Bilhete/Bilhete';
 import { confrontos } from './confrontos';
 import Header from '../../components/Header/Header';
 import { useState } from 'react';
 import LoginPopup from '../../components/LoginPopup/LoginPopup';
 import Footer from '../../components/Footer/Footer';
+import Teste from '../../components/CardTeste';
+// import { Teste } from '../../components/CardTeste';
 
 const Home = ({ adicionarZebra, bilhete }) => {
 
@@ -32,19 +34,19 @@ const Home = ({ adicionarZebra, bilhete }) => {
 
           <div className="confrontos">
             {confrontos.map((confronto) => (
-              <CardConfronto 
+              <Teste
                 key={confronto.id}
                 confronto={confronto}
                 adicionarZebra={(event) => handleAdicionarZebra(confronto, event)}
               />
             ))}
-            
+
           </div>
           <Bilhete bilhete={bilhete} />
         </div>
         {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
       </div>
-  
+
       <Footer />
     </div>
   );

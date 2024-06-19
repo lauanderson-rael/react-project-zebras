@@ -5,13 +5,13 @@ import './LoginPopup.css';
 const LoginPopup = ({ fecharPopup }) => (
   <div className="popup">
     <div className="popup-inner">
-      <button onClick={fecharPopup}>Fechar</button>
+      <button onClick={fecharPopup}>FECHAR</button>
       <form>
         <label>Email:</label>
         <input type="email" required />
         <label>Senha:</label>
         <input type="password" required />
-        <button type="submit">Entrar</button>
+        <button type="submit">ENTRAR</button>
       </form>
     </div>
   </div>

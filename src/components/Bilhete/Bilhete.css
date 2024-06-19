@@ -29,7 +29,7 @@
 }
 
 .bilhete button {
-  background-color: #4caf50;
+  background-color: green;
   color: white;
   border: none;
   padding: 10px;
@@ -39,7 +39,7 @@
 }
 
 .bilhete button:hover {
-  background-color: #37833b;
+  background-color: darkgreen;
 }
 
 @media (max-width: 768px) {

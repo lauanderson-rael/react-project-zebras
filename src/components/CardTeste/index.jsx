@@ -1,18 +1,48 @@
 import './styles.css'
+import '../../../public/imgs/pixelcut-export f.png'
+import PropTypes from 'prop-types';
 
-export function Teste() {
-    return (
-        <div className="relative component-wrapper">
-          <div className="absolute top-0 left-0 triangle top-left"></div>
-          <div className="absolute top-[50px] left-[50px] square"></div>
-          <div className="absolute bottom-[50px] right-[50px] square"></div>
-          <div className="absolute bottom-0 right-0 triangle bottom-right"></div>
-          <div className="absolute center-text font-bold">Centered Text</div>
-          <div className="absolute bottom-btn left-btn right-btn">
-            <button className="w-full rounded-b-lg">Click me</button>
+
+const Teste = ({ confronto, adicionarZebra }) => (
+
+    <section>
+      <div className="card-container">
+          <div className="card">
+              <img className="triangle-top-left" src="../../../public/imgs/pixelcut-export f.png" alt="f"></img>
+              <span className="data">{confronto.horario} <br /> {confronto.data}</span>
+              <main className="content">
+                  <div className="top-box">
+                      <img src={confronto.imagemX} alt={confronto.timeX}/>
+                      <span>Fortaleza FC</span>
+                  </div>
+
+                  <div className="center">X</div>
+
+                  <div className="bottom-box">
+                      <img src={confronto.imagemY} alt={confronto.timeY}/>
+                      <span>Botafogo RJ</span>
+                  </div>
+
+              </main>
+              <img className="triangle-bottom-right"  src="../../../public/imgs/pixelcut-export z.png" alt="z"></img>
           </div>
-        </div>
-      );
-    }
-  
-  
+
+          <button className="add-button" type="button" onClick={adicionarZebra}>ADICIONAR ZEBRA</button>
+      </div>
+  </section>
+);
+
+Teste.propTypes = {
+    confronto: PropTypes.shape({
+      id: PropTypes.number,
+      timeX: PropTypes.string,
+      timeY: PropTypes.string,
+      imagemX: PropTypes.string,
+      imagemY: PropTypes.string,
+      horario: PropTypes.string,
+      data: PropTypes.string,
+    }).isRequired,
+    adicionarZebra: PropTypes.func.isRequired,
+  };
+
+export default Teste;

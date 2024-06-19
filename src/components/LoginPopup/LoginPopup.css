@@ -25,7 +25,7 @@
 }
 
 .popup-inner button {
-  background-color: tomato;
+  background-color: red;
   border: none;
   padding: 10px;
   color: white;
@@ -35,7 +35,7 @@
 }
 
 .popup-inner button:hover {
-  background-color: #ff3333;
+  background-color: rgb(206, 11, 11);
 }
 
 .popup-inner form {
@@ -55,7 +55,7 @@
 }
 
 .popup-inner form button {
-  background-color: #4caf50;
+  background-color: green;
   border: none;
   margin-top: 10px;
   padding: 10px;
@@ -66,5 +66,5 @@
 }
 
 .popup-inner form button:hover {
-  background-color: #45a049;
+  background-color: darkgreen;
 }

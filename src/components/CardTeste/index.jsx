@@ -13,14 +13,14 @@ const Teste = ({ confronto, adicionarZebra }) => (
               <main className="content">
                   <div className="top-box">
                       <img src={confronto.imagemX} alt={confronto.timeX}/>
-                      <span>Fortaleza FC</span>
+                      <span>{confronto.timeX}</span>
                   </div>
 
                   <div className="center">X</div>
 
                   <div className="bottom-box">
                       <img src={confronto.imagemY} alt={confronto.timeY}/>
-                      <span>Botafogo RJ</span>
+                      <span>{confronto.timeY}</span>
                   </div>
 
               </main>

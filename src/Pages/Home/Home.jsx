@@ -24,11 +24,11 @@ const Home = ({ adicionarZebra, bilhete }) => {
   return (
     <div className='page-container'>
       <Header mostrarPopup={() => setMostrarPopup(true)} />
+
       <div className='eventos'>
-
         <span>EVENTOS</span>
-
       </div>
+
       <div className="content-wrap">
         <div className="main-content">
 
@@ -42,6 +42,7 @@ const Home = ({ adicionarZebra, bilhete }) => {
             ))}
 
           </div>
+
           <Bilhete bilhete={bilhete} />
         </div>
         {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}

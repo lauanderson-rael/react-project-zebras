@@ -1,5 +1,4 @@
-
-import './confrontos'
+import './confrontos';
 import './styles.css';
 import PropTypes from 'prop-types';
 import Bilhete from '../../components/Bilhete/Bilhete';
@@ -10,9 +9,7 @@ import LoginPopup from '../../components/LoginPopup/LoginPopup';
 import Footer from '../../components/Footer/Footer';
 import Teste from '../../components/Card';
 
-
-const Home = ({ adicionarZebra, bilhete }) => {
-
+const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
   const handleAdicionarZebra = (confronto, event) => {
     event.preventDefault();
     adicionarZebra(confronto);
@@ -30,7 +27,6 @@ const Home = ({ adicionarZebra, bilhete }) => {
 
       <div className="content-wrap">
         <div className="main-content">
-
           <div className="confrontos">
             {confrontos.map((confronto) => (
               <Teste
@@ -39,10 +35,8 @@ const Home = ({ adicionarZebra, bilhete }) => {
                 adicionarZebra={(event) => handleAdicionarZebra(confronto, event)}
               />
             ))}
-
           </div>
-
-          <Bilhete bilhete={bilhete} />
+          <Bilhete bilhete={bilhete} removerZebra={removerZebra} />
         </div>
         {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
       </div>
@@ -54,6 +48,7 @@ const Home = ({ adicionarZebra, bilhete }) => {
 
 Home.propTypes = {
   adicionarZebra: PropTypes.func.isRequired,
+  removerZebra: PropTypes.func.isRequired,
   bilhete: PropTypes.array.isRequired,
 };
 

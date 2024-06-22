@@ -27,14 +27,20 @@
 
 .item-bilhete {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(47, 47, 47);
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
 }
 
-.item-bilhete input,
-.input-valor {
-  width: 95%;
+.item-bilhete .remover {
+  color: rgb(255, 0, 0);
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
   padding: 5px;
-  margin-bottom: 0.5rem;
-  border-radius: 0.4rem;
 }
 
 .bilhete button {
@@ -51,12 +57,13 @@
   background-color: darkgreen;
 }
 
-.bilhete-input {
+.bilhete-value {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 0;
 }
-.bilhete-input input {
+.bilhete-value input {
   width: 60px;
   padding: 0;
   margin: 0;
@@ -64,7 +71,7 @@
   border: 1px solid #353535;
   border-radius: 3px;
 }
-.bilhete-input p {
+.bilhete-value p {
   font-size: small;
 }
 

@@ -22,11 +22,9 @@ const Teste = ({ confronto, adicionarZebra }) => (
                       <img src={confronto.imagemY} alt={confronto.timeY}/>
                       <span>{confronto.timeY}</span>
                   </div>
-
               </main>
               <img className="triangle-bottom-right"  src="../../../public/imgs/pixelcut-export z.png" alt="z"></img>
           </div>
-
           <button className="add-button" type="button" onClick={adicionarZebra}>ADICIONAR ZEBRA</button>
       </div>
   </section>

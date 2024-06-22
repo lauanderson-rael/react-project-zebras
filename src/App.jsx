@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import Home from './Pages/Home/Home';
 function App() {
-  const [bilhete, setBilhete] = useState([]);
 
-  const adicionarZebra = (confronto) => {
-    setBilhete([...bilhete, confronto]);
+  const [bilhete, setBilhete] = useState([]);
+  const adicionarZebra = (zebra) => {
+    setBilhete([...bilhete, zebra]);
   };
 
   return (
@@ -17,16 +17,3 @@ function App() {
 }
 
 export default App;
-
-
-{/* <main>
-      <div className="app">
-        <Header mostrarPopup={() => setMostrarPopup(true)} />
-        <Home  adicionarZebra={adicionarZebra} bilhete={bilhete}/>
-        {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
-      </div>
-
-      <div className='footer'>
-      </div>
-
-    </main> */}

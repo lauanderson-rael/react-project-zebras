@@ -1,16 +1,15 @@
 
-import PropTypes from 'prop-types';
 import './confrontos'
 import './styles.css';
-// import CardConfronto from '../../components/CardConfronto/CardConfronto';
+import PropTypes from 'prop-types';
 import Bilhete from '../../components/Bilhete/Bilhete';
 import { confrontos } from './confrontos';
 import Header from '../../components/Header/Header';
 import { useState } from 'react';
 import LoginPopup from '../../components/LoginPopup/LoginPopup';
 import Footer from '../../components/Footer/Footer';
-import Teste from '../../components/CardTeste';
-// import { Teste } from '../../components/CardTeste';
+import Teste from '../../components/Card';
+
 
 const Home = ({ adicionarZebra, bilhete }) => {
 

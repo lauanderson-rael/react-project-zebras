@@ -19,11 +19,11 @@ const Bilhete = ({ bilhete }) => {
       {bilhete.map((item) => (
         <div key={item.id} className="item-bilhete">
           <div>{item.timeX} vs {item.timeY} <hr /></div>
-          {/* <input
+          <input
             type="number"
             placeholder="Valor"
             onChange={(e) => handleChange(item.id, e.target.value)}
-          /> */}
+          />
         </div>
       ))}
       </div>

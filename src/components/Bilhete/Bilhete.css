@@ -9,7 +9,7 @@
   margin-bottom: auto;
   background-color: #ffffff;
 
-  /* border-radius: 0.5rem; */
+  border-radius: 5px;
 }
 
 .container {
@@ -45,7 +45,7 @@
   padding: 10px;
   cursor: pointer;
   width: 100%;
-  /* border-radius: 0.4rem; */
+  border-radius: 5px;
 }
 
 .bilhete button:hover {

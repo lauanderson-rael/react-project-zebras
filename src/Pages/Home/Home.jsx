@@ -22,7 +22,7 @@ const Home = ({ adicionarZebra, bilhete }) => {
   const [mostrarPopup, setMostrarPopup] = useState(false);
 
   return (
-    <div className='page-container'>
+    <div className='home-container'>
       <Header mostrarPopup={() => setMostrarPopup(true)} />
 
       <div className='eventos'>

@@ -2,13 +2,12 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid #ccc;
   padding: 10px;
-  min-width: 210px;
+  min-width: 250px;
   max-width: 210px;
   box-sizing: border-box;
   box-shadow: 3px 3px 8px 1px #00003f50;
   margin-bottom: auto;
   background-color: #ffffff;
-
   border-radius: 5px;
 }
 
@@ -62,6 +61,8 @@
   padding: 0;
   margin: 0;
   height: 20px;
+  border: 1px solid #353535;
+  border-radius: 3px;
 }
 .bilhete-input p {
   font-size: small;

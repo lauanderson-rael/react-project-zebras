@@ -11,6 +11,7 @@
   background-color: rgb(247, 247, 247);
   padding: 0.5rem 1rem;
   font-weight: 700;
+  border-radius: 0 0 5px 5px;
 }
 .home-container .eventos {
   margin-bottom: 1.5rem;

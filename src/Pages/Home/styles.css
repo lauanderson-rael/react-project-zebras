@@ -1,71 +1,65 @@
-.home-container {
+.home {
   display: flex;
   flex-direction: column;
   background-color: #dddfdd;
-  padding-top: 7.25rem;
+  padding-top: 7rem;
 }
-
-.home-container .eventos span {
-  margin-left: 2rem;
-  border-left: 5px solid green;
-  background-color: rgb(247, 247, 247);
+.content-page {
+  box-shadow: 3px 3px 8px 1px #00003f50;
+}
+.title {
+  background-color: white;
   padding: 0.5rem 1rem;
   font-weight: 700;
-  border-radius: 0 0 5px 5px;
-}
-.home-container .eventos {
-  margin-bottom: 1.5rem;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #dddfdd;
 }
 
-.content-wrap {
+.container-main {
   flex: 1; /*empurrar fotter para baixo*/
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0 2rem;
+  gap: 1rem;
 }
 
-.main-content {
+.wrapper {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  gap: 30px;
-  margin-bottom: 100px;
-  /* border: 2px solid blue; */
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  height: 78vh;
 }
 
-.confrontos {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: flex-start;
-  box-shadow: 3px 3px 8px 1px #00003f50;
   background-color: #ffffff;
-  height: 520px;
-  overflow-y: auto;
   padding: 1rem;
   border-radius: 5px;
+  margin-bottom: 100px;
   /* border: 1px solid red; */
 }
 
-@media (max-width: 768px) {
-  .home-container {
-    padding-top: 6rem;
-  }
-  .home-container .eventos span {
-    margin-left: 0rem;
-  }
-  .home-container .eventos {
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1.5rem auto;
-  }
+.footer-mobile {
+  display: none;
+}
 
-  .content-wrap {
+@media (max-width: 768px) {
+  .container-main {
     padding: 0 0.5rem;
-  }
-  .main-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10rem;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10rem; */
+    height: auto;
   }
   .bilhete {
     margin: 0 auto;
@@ -78,5 +72,23 @@
     height: auto;
     background-color: transparent;
     box-shadow: none;
+  }
+
+  .footer-destop {
+    display: none;
+  }
+  .footer-mobile {
+    display: inline;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-destop {
+    display: none;
+  }
+  .footer-mobile {
+    display: inline;
+    margin-top: 4rem;
   }
 }

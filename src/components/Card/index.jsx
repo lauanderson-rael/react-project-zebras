@@ -3,7 +3,7 @@ import '../../../public/imgs/pixelcut-export f.png'
 import PropTypes from 'prop-types';
 
 
-const Teste = ({ confronto, adicionarZebra }) => (
+const Card = ({ confronto, adicionarZebra }) => (
 
     <section>
       <div className="card-container">
@@ -30,7 +30,7 @@ const Teste = ({ confronto, adicionarZebra }) => (
   </section>
 );
 
-Teste.propTypes = {
+Card.propTypes = {
     confronto: PropTypes.shape({
       id: PropTypes.number,
       timeX: PropTypes.string,
@@ -43,4 +43,4 @@ Teste.propTypes = {
     adicionarZebra: PropTypes.func.isRequired,
   };
 
-export default Teste;
+export default Card;

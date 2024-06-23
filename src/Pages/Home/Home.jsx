@@ -7,7 +7,8 @@ import Header from '../../components/Header/Header';
 import { useState } from 'react';
 import LoginPopup from '../../components/LoginPopup/LoginPopup';
 import Footer from '../../components/Footer/Footer';
-import Teste from '../../components/Card';
+import Card from '../../components/Card/index'
+
 
 const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
   const handleAdicionarZebra = (confronto, event) => {
@@ -18,30 +19,31 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
   const [mostrarPopup, setMostrarPopup] = useState(false);
 
   return (
-    <div className='home-container'>
+    <div className='home'>
       <Header mostrarPopup={() => setMostrarPopup(true)} />
 
-      <div className='eventos'>
-        <span>EVENTOS</span>
-      </div>
-
-      <div className="content-wrap">
-        <div className="main-content">
-          <div className="confrontos">
-            {confrontos.map((confronto) => (
-              <Teste
-                key={confronto.id}
-                confronto={confronto}
-                adicionarZebra={(event) => handleAdicionarZebra(confronto, event)}
-              />
-            ))}
+      <div className="container-main">
+        <div className='container-page'>
+          <div className='title'>EVENTOS</div>
+          <div className="wrapper">
+              <div className="cards">
+                {confrontos.map((confronto) => (
+                  <Card
+                    key={confronto.id}
+                    confronto={confronto}
+                    adicionarZebra={(event) => handleAdicionarZebra(confronto, event)}
+                  />
+                ))}
+              </div>
+               <div className='footer-destop'><Footer /></div>
           </div>
-          <Bilhete bilhete={bilhete} removerZebra={removerZebra} />
         </div>
-        {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
-      </div>
 
-      <Footer />
+        <Bilhete bilhete={bilhete} removerZebra={removerZebra} />
+
+      </div>
+      <div className="footer-mobile"><Footer/></div>
+      {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
     </div>
   );
 };

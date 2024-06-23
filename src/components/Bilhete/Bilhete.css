@@ -3,7 +3,6 @@
   border: 1px solid #ccc;
   padding: 10px;
   min-width: 250px;
-  max-width: 210px;
   box-sizing: border-box;
   box-shadow: 3px 3px 8px 1px #00003f50;
   margin-bottom: auto;
@@ -13,9 +12,9 @@
 
 .container {
   font-size: small;
-  max-height: 200px; /* Altura fixa para o contêiner */
   overflow-y: auto; /* Adiciona a barra de rolagem quando necessário */
   padding: 0.25rem;
+  max-height: 360px;
   /* border: 1px solid rgb(74, 73, 73); */
 }
 
@@ -79,5 +78,9 @@
   .bilhete {
     margin-top: 2rem;
     min-width: 90%;
+  }
+
+  .container {
+    max-height: 600px;
   }
 }

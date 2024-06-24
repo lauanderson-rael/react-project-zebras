@@ -1,8 +1,9 @@
 .home {
   display: flex;
   flex-direction: column;
-  background-color: #dddfdd;
   padding-top: 7rem;
+  background-color: #c3c3c3;
+  /* background-color: #999d9f; */
 }
 .content-page {
   box-shadow: 3px 3px 8px 1px #00003f50;
@@ -58,13 +59,12 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 10rem; */
     height: auto;
   }
   .bilhete {
     margin: 0 auto;
   }
-  .confrontos {
+  .cards {
     align-items: center;
     justify-content: center;
     margin-right: 0;

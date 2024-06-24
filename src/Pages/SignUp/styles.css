@@ -1,25 +1,31 @@
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+}
+.cabecalho-sign {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 2rem;
+  background-color: #1f1f1f;
+  color: white;
+  box-sizing: border-box;
 }
 
 .fundo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #eef2f3, #999d9f);
-  padding: 20px; /* Adiciona espaçamento para dispositivos móveis */
+  padding: 20px;
+  margin-top: 2rem;
 }
 
 .signup-container {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 8px 1px #00003f50;
   width: 100%;
   max-width: 400px;
   margin: auto; /* Centraliza o contêiner */
@@ -33,6 +39,7 @@ body {
 
 .signup-form .form-group {
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .signup-form .form-group label {

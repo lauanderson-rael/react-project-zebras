@@ -6,12 +6,17 @@ const LoginPopup = ({ fecharPopup }) => (
   <div className="popup">
     <div className="popup-inner">
       <button className="close-button" onClick={fecharPopup}>X</button>
-      <h2>Login</h2>
-      <form>
-        <label>Email:</label>
-        <input type="email" required />
-        <label>Senha:</label>
-        <input type="password" required />
+        <h1>Login</h1>
+      <form >
+        <div >
+          <label>E-mail</label>
+          <input className="form-control" type="email" required />
+        </div>
+
+        <div className="form-group">
+          <label>Senha</label>
+          <input  className="form-control" type="password" required />
+        </div>
         <button type="submit">ENTRAR</button>
       </form>
       <div className="signup-link">

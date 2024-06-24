@@ -16,7 +16,7 @@ const Bilhete = ({ bilhete, removerZebra }) => {
       </div>
 
       <div className='bilhete-value'>
-        <input type="text" placeholder='Valor' />
+        <input type="text" placeholder=' Valor' />
         <p>Retornos: <span>R$ 0,00</span></p>
       </div>
       <button onClick={() => console.log('Finalizar Aposta')}>Finalizar Aposta</button>

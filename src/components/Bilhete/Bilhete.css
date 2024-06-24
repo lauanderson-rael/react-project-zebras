@@ -12,7 +12,7 @@
 
 .container {
   font-size: small;
-  overflow-y: auto; /* Adiciona a barra de rolagem quando necessário */
+  overflow-y: auto; /*barra de rolagem */
   padding: 0.25rem;
   max-height: 360px;
   /* border: 1px solid rgb(74, 73, 73); */

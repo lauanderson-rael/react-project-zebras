@@ -29,7 +29,7 @@ export function SignUp() {
                             <label htmlFor="confirm-password">Confirmar senha</label>
                             <input type="password" id="confirm-password" name="confirm-password" className="form-control" />
                         </div>
-                        <button type="submit" className="btn btn-primary">Criar Conta</button>
+                        <button type="submit" className="btn btn-primary">CRIAR CONTA</button>
                     </form>
                 </div>
             </div>

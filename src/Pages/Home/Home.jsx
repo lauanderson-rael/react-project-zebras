@@ -35,7 +35,7 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
                   />
                 ))}
               </div>
-               <div className='footer-destop'><Footer /></div>
+               
           </div>
         </div>
 

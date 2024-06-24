@@ -1,5 +1,4 @@
 import './styles.css'
-import '../../../public/imgs/pixelcut-export f.png'
 import PropTypes from 'prop-types';
 
 
@@ -8,7 +7,7 @@ const Card = ({ confronto, adicionarZebra }) => (
     <section>
       <div className="card-container">
           <div className="card">
-              <img className="triangle-top-left" src="../../../public/imgs/pixelcut-export f.png" alt="f"></img>
+              <img className="triangle-top-left" src="images/left.png" alt="f"></img>
               <span className="data">{confronto.horario} <br /> {confronto.data}</span>
               <main className="content">
                   <div className="top-box">
@@ -23,7 +22,7 @@ const Card = ({ confronto, adicionarZebra }) => (
                       <span>{confronto.timeY}</span>
                   </div>
               </main>
-              <img className="triangle-bottom-right"  src="../../../public/imgs/pixelcut-export z.png" alt="z"></img>
+              <img className="triangle-bottom-right"  src="images/right.png" alt="z"></img>
           </div>
           <button className="add-button" type="button" onClick={adicionarZebra}>ADICIONAR ZEBRA</button>
       </div>

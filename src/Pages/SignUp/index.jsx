@@ -5,7 +5,7 @@ export function SignUp() {
     return (
         <div>
             <header className="cabecalho-sign">
-                <img src="./../../../public/images/logo02.png" alt="logo" width="80px"/>
+                <img src="images/logo02.png" alt="logo" width="80px"/>
             </header>
 
          <div>

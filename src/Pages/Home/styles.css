@@ -31,7 +31,7 @@
   overflow-y: auto;
   background-color: #fff;
   border-radius: 0 0 5px 5px;
-  height: 78vh;
+  height: 75vh;
 }
 
 .cards {
@@ -47,8 +47,9 @@
 }
 
 .footer-mobile {
-  display: none;
+  margin-top: 5rem;
 }
+
 
 @media (max-width: 768px) {
   .container-main {
@@ -73,10 +74,6 @@
     background-color: transparent;
     box-shadow: none;
   }
-
-  .footer-destop {
-    display: none;
-  }
   .footer-mobile {
     display: inline;
     margin-top: 4rem;
@@ -84,11 +81,7 @@
 }
 
 @media (max-width: 500px) {
-  .footer-destop {
-    display: none;
-  }
   .footer-mobile {
-    display: inline;
     margin-top: 4rem;
   }
 }

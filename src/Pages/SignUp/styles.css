@@ -58,7 +58,7 @@ body {
 
 .signup-form .btn {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   background-color: green;
@@ -80,7 +80,7 @@ body {
     padding: 2rem;
   }
   .signup-form .btn{
-    padding: 20px;
+    padding: 15px;
   }
 }
 

@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = ({ mostrarPopup }) => (
   <header className="cabecalho">
-    <img src="./../../../public/images/logo02.png" alt="logo" width="80px"/>
+    <img src="images/logo02.png" alt="logo" width="80px"/>
     <div className="login-signup">
       <button onClick={mostrarPopup}>Login / Sign-up</button>
     </div>

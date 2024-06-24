@@ -104,6 +104,6 @@ section {
 @media (max-width: 768px) {
   :root {
     --card-width: 100%;
-    --card-heigh: 325px;
+    --card-heigh: 360px;
   }
 }

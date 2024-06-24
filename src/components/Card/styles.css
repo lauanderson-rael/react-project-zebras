@@ -102,8 +102,8 @@ section {
 }
 
 @media (max-width: 768px) {
-  /* :root {
-    --card-width: 350px;
+  :root {
+    --card-width: 100%;
     --card-heigh: 325px;
-  } */
+  }
 }

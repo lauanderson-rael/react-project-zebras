@@ -35,7 +35,6 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
                   />
                 ))}
               </div>
-               
           </div>
         </div>
 

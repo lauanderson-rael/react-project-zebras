@@ -78,6 +78,9 @@ body {
     max-width: 90%; /* Reduz a largura máxima do contêiner */
     padding: 2rem;
   }
+  .signup-form .btn{
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -90,7 +93,6 @@ body {
   }
 
   .signup-form .btn {
-    padding: 8px;
     font-size: 14px;
   }
 }

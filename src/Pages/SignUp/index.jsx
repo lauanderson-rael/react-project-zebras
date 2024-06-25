@@ -1,11 +1,13 @@
 
 import './styles.css'
-
+import { Link } from 'react-router-dom';
 export function SignUp() {
     return (
         <div>
             <header className="cabecalho-sign">
+                <Link to={'/'}>
                 <img src="images/logo02.png" alt="logo" width="80px"/>
+                </Link>
             </header>
 
          <div>

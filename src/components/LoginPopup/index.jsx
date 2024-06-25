@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './LoginPopup.css';
+import './styles.css';
 import { Link } from 'react-router-dom';
 
 const LoginPopup = ({ fecharPopup }) => (

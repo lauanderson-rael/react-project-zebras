@@ -3,6 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.error {
+  color: red;
+  font-size: 0.825em;
+  margin-top: 0.25em;
+}
+
 .cabecalho-sign {
   width: 100%;
   display: flex;
@@ -79,7 +86,7 @@ body {
     max-width: 90%; /* Reduz a largura máxima do contêiner */
     padding: 2rem;
   }
-  .signup-form .btn{
+  .signup-form .btn {
     padding: 15px;
   }
 }

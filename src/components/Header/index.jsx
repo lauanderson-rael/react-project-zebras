@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import './Header.css';
+import './styles.css';
 
 const Header = ({ mostrarPopup }) => (
   <header className="cabecalho">

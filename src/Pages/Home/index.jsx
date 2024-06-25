@@ -1,12 +1,12 @@
 import './confrontos';
 import './styles.css';
 import PropTypes from 'prop-types';
-import Bilhete from '../../components/Bilhete/Bilhete';
+import Bilhete from '../../components/Bilhete';
 import { confrontos } from './confrontos';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header';
 import { useState } from 'react';
-import LoginPopup from '../../components/LoginPopup/LoginPopup';
-import Footer from '../../components/Footer/Footer';
+import LoginPopup from '../../components/LoginPopup';
+import Footer from '../../components/Footer';
 import Card from '../../components/Card/index'
 
 
@@ -24,7 +24,7 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
 
       <div className="container-main">
         <div className='container-page'>
-          <div className='title'>EVENTOS</div>
+         <div className='title'>EVENTOS</div>
           <div className="wrapper">
               <div className="cards">
                 {confrontos.map((confronto) => (

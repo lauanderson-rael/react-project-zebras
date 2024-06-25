@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import Home from './Pages/Home';
 import './App.css';
-import Home from './Pages/Home/Home';
+
 function App() {
 
   const [bilhete, setBilhete] = useState([]);

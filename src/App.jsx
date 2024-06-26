@@ -5,6 +5,7 @@ import './App.css';
 function App() {
 
   const [bilhete, setBilhete] = useState([]);
+
   const adicionarZebra = (zebra) => {
     setBilhete((prevBilhete) => {
       if (prevBilhete.some(item => item.id === zebra.id)) {
@@ -24,6 +25,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

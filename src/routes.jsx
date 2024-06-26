@@ -6,11 +6,10 @@ function AppRoutes(){
     return(
         <Router>
             <Routes>
-                <Route exact path='/' element={<App />} />
+                <Route exact path='/' element={<App/>} />
                 <Route exact path='/sign' element={<SignUp />} />
             </Routes>
         </Router>
-
     )
 }
 

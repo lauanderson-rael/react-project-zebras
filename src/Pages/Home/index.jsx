@@ -42,8 +42,11 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
 
       </div>
       <div className="footer-mobile"><Footer/></div>
-      {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />}
+      {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)}/>}
     </div>
+
+      /*Se mostrarPopup é true, o componente <LoginPopup />
+      será renderizado. Se mostrarPopup for false, nada será renderizado. */
   );
 };
 
@@ -54,3 +57,10 @@ Home.propTypes = {
 };
 
 export default Home;
+
+
+// Funcionalidade
+// Inicialmente: mostrarPopup é false, então o LoginPopup não é renderizado.
+// Quando o Usuário Interage com o Header: A função mostrarPopup={() => setMostrarPopup(true)} é chamada, alterando mostrarPopup para true.
+// Renderização do Popup: Quando mostrarPopup é true, {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)} />} renderiza o LoginPopup.
+// Fechar o Popup: Dentro de LoginPopup, chamar fecharPopup (que executa setMostrarPopup(false)) irá alterar mostrarPopup de volta para false, escondendo o popup.

@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css'; 
+
+import './styles.css';
 
 const PageError404 = () => {
   return (
@@ -10,7 +10,7 @@ const PageError404 = () => {
       <div className="fundo">
         <div className="error-message">
             <div className="image-error">
-                <img width='200px' src="images/404mike.png" alt="404" />
+                <img width='200px' src="images/zeb404.png" alt="404" />
             </div>
             <p>Desculpe, a página que você está procurando não foi encontrada <span>:(</span></p>
         </div>

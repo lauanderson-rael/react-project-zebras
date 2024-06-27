@@ -19,7 +19,7 @@ const PageError404 = () => {
 
       <Link to={'/'}>
         <button className="btn-voltar">
-          <p>voltar ao inicio</p>
+          <p>VOLTAR AO INÍCIO</p>
         </button>
       </Link>
 

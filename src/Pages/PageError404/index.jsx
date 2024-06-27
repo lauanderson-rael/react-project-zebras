@@ -1,5 +1,6 @@
 
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const PageError404 = () => {
   return (
@@ -15,6 +16,13 @@ const PageError404 = () => {
             <p>Desculpe, a página que você está procurando não foi encontrada <span>:(</span></p>
         </div>
       </div>
+
+      <Link to={'/'}>
+        <button className="btn-voltar">
+          <p>voltar ao inicio</p>
+        </button>
+      </Link>
+
     </div>
   );
 }

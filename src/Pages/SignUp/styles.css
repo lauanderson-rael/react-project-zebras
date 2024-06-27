@@ -7,7 +7,7 @@ body {
 .error {
   color: red;
   font-size: 0.825em;
-  margin-top: 0.25em;
+  margin-top: 0.15em;
 }
 
 .cabecalho-sign {
@@ -20,12 +20,11 @@ body {
   box-sizing: border-box;
 }
 
-.fundo {
+div .fundo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-top: 1rem; /*change  */
+  margin-top: 0.5rem; /*change  */
 }
 
 .signup-container {
@@ -41,6 +40,7 @@ body {
 .signup-container h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 0;
   color: #333;
 }
 

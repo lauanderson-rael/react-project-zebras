@@ -17,9 +17,9 @@ const Bilhete = ({ bilhete, removerZebra }) => {
 
       <div className='bilhete-value'>
         <input type="text" placeholder=' Valor' />
-        <p>Retornos: <span>R$ 0,00</span></p>
+        <p> <b>Retornos: </b><span>R$ 0,00</span></p>
       </div>
-      <button onClick={() => console.log('Finalizar Aposta')}>Finalizar Aposta</button>
+      <button onClick={() => console.log('FINALIZAR ZEBRA')}>FINALIZAR ZEBRA</button>
     </div>
   );
 };

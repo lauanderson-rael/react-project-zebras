@@ -6,7 +6,7 @@ const PageError404 = () => {
   return (
     <div className="error-container">
       <header className="cabecalho-error">
-        <h1>Erro <span>404</span></h1>
+        <h2>Erro <span>404</span></h2>
       </header>
       <div className="fundo">
         <div className="error-message">

@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.page-rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 50px;
+}
+
+.signup-container-rules {
+  background-color: #ffffff;
+
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 1px #00003f50;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.signup-container-rules h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/*ajustes em telas menores */
+@media screen and (max-width: 768px) {
+  .signup-container-rules,
+  .page-rules {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .signup-container-rules {
+    padding: 1rem;
+  }
+}

@@ -40,10 +40,8 @@ export function SignUp() {
 
     return (
         <div>
-            <header className="cabecalho-sign">
-                <Link to={'/'}>
-                    <img src="images/logo02.png" alt="logo" width="80px" />
-                </Link>
+            <header className="cabecalho" style={{ position: 'static'}}>
+            <Link  to={'/'} style={{background: 'red', display: 'flex' }}> <img src="images/logo02.png" alt="logo" width="60px" /> </Link>
             </header>
 
             <div>

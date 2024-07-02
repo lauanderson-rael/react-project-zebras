@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const LoginPopup = ({ fecharPopup }) => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
@@ -12,14 +11,18 @@ const LoginPopup = ({ fecharPopup }) => {
     // Adicione aqui a lógica para o login, como chamadas de API
     console.log('Email:', email);
     console.log('Senha:', senha);
-    // Fechar o popup após o login
-    fecharPopup();
+    // voltar para home após o login
+
   };
 
   return (
-    <div className="popup">
+    <div className="login">
+      <header className="cabecalho">
+        <Link  to={'/'} style={{background: 'red', display: 'flex' }}> <img src="images/logo02.png" alt="logo" width="60px" /> </Link>
+      </header>
+
       <div className="popup-inner">
-        <button className="close-button" onClick={fecharPopup}>X</button>
+        {/* <button className="close-button">X</button> */}
         <h1>Login</h1>
         <form onSubmit={processarEnvio}>
           <div className="form-group">
@@ -53,8 +56,5 @@ const LoginPopup = ({ fecharPopup }) => {
   );
 };
 
-LoginPopup.propTypes = {
-  fecharPopup: PropTypes.func.isRequired,
-};
 
-export default LoginPopup;
+export default Login;

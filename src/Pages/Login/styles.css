@@ -1,15 +1,15 @@
-.popup {
+.login {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   color: #333;
+  background-color: #c3c3c3;
 }
 
 .popup-inner {
@@ -24,23 +24,7 @@
   border-radius: 5px;
   position: relative;
   padding: 2rem;
-}
-
-.close-button {
-  background-color: red;
-  border: none;
-  padding: 5px 10px;
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border-radius: 5px;
-}
-
-.close-button:hover {
-  background-color: rgb(206, 11, 11);
+  box-shadow: 3px 3px 8px 1px #00003f50;
 }
 
 .popup-inner form {

@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import Bilhete from '../../components/Bilhete';
 import { confrontos } from './confrontos';
 import Header from '../../components/Header';
-import { useState } from 'react';
-import LoginPopup from '../../components/LoginPopup';
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 import Card from '../../components/Card/index'
 
 
@@ -16,11 +14,10 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
     adicionarZebra(confronto);
   };
 
-  const [mostrarPopup, setMostrarPopup] = useState(false);
 
   return (
     <div className='home'>
-      <Header mostrarPopup={() => setMostrarPopup(true)} />
+      <Header />
 
       <div className="container-main">
         <div className='container-page'>
@@ -41,12 +38,9 @@ const Home = ({ adicionarZebra, removerZebra, bilhete }) => {
         <Bilhete bilhete={bilhete} removerZebra={removerZebra} />
 
       </div>
-      <div className="footer-mobile"><Footer/></div>
-      {mostrarPopup && <LoginPopup fecharPopup={() => setMostrarPopup(false)}/>}
+      {/* <div className="footer-mobile"><Footer/></div> */}
     </div>
 
-      /*Se mostrarPopup é true, o componente <LoginPopup />
-      será renderizado. Se mostrarPopup for false, nada será renderizado. */
   );
 };
 

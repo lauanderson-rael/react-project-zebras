@@ -3,21 +3,16 @@ body {
   margin: 0;
   padding: 0;
 }
+.page-login {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 
 .error {
   color: red;
   font-size: 0.825em;
   margin-top: 0.15em;
-}
-
-.cabecalho-sign {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.3rem 2rem;
-  background-color: #1f1f1f;
-  color: white;
-  box-sizing: border-box;
 }
 
 div .fundo {
